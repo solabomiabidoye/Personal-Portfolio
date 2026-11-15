@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Organise academic tasks with Praise Abidoye's academic planner.">
+  <title>Academic Planner | Praise Abidoye</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header"><nav class="nav container" aria-label="Main navigation">
+    <a class="brand" href="index.html">PRAISE<span>.</span></a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-menu"><span></span><span></span><span></span></button>
+    <ul class="nav-menu" id="nav-menu"><li><a href="index.html">Home</a></li><li><a href="about.html">About</a></li><li><a href="projects.html">Projects</a></li><li><a href="planner.html" aria-current="page">Academic Planner</a></li><li><a class="nav-cta" href="contact.html">Contact</a></li></ul>
+  </nav></header>
+
+  <main id="main">
+    <section class="page-hero"><div class="container"><p class="eyebrow"><span class="eyebrow-line"></span> STUDY ORGANISATION</p><h1>Academic <span class="accent-text">planner.</span></h1><p>Capture your tasks, set a deadline and track your progress. Your tasks are saved in this browser.</p></div></section>
+    <section class="section container planner-layout">
+      <div class="planner-main">
+        <div class="planner-heading"><div><p class="eyebrow">YOUR WORKSPACE</p><h2>My tasks</h2></div><span class="saved-label"><span class="status-dot"></span> Saved on this device</span></div>
+        <form id="task-form" class="task-form">
+          <div class="form-field task-title-field"><label for="task-title">Task description</label><input id="task-title" name="task-title" type="text" maxlength="120" placeholder="e.g. Revise descriptive statistics" required></div>
+          <div class="form-field"><label for="task-date">Due date</label><input id="task-date" name="task-date" type="date"></div>
+          <div class="form-field"><label for="task-priority">Priority</label><select id="task-priority" name="task-priority"><option value="Normal">Normal</option><option value="High">High</option><option value="Low">Low</option></select></div>
+          <button class="button button-primary add-task-button" type="submit">＋ Add task</button>
+        </form>
+
+        <div class="task-toolbar"><div class="filter-tabs" role="group" aria-label="Filter tasks"><button class="filter-button active" type="button" data-filter="all" aria-pressed="true">All</button><button class="filter-button" type="button" data-filter="active" aria-pressed="false">Pending</button><button class="filter-button" type="button" data-filter="completed" aria-pressed="false">Completed</button></div><span id="task-count" class="muted small-text">0 tasks</span></div>
+        <div id="task-list" class="task-list" aria-live="polite"><p class="empty-state">No tasks yet. Add your first academic task above.</p></div>
+      </div>
+      <aside class="planner-sidebar">
+        <div class="progress-card"><p class="eyebrow eyebrow-light">YOUR PROGRESS</p><div class="progress-number"><strong id="progress-percent">0%</strong><span>completed</span></div><div class="progress-track"><span id="progress-bar"></span></div><div class="progress-stats"><span><strong id="completed-count">0</strong> Completed</span><span><strong id="pending-count">0</strong> Pending</span></div></div>
+        <div class="side-card planner-tip"><span class="card-icon">✦</span><h3>Study tip</h3><p>Break large assignments into smaller tasks. A clear next step makes it easier to begin and track your progress.</p></div>
+      </aside>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container footer-inner"><a class="brand brand-light" href="index.html">PRAISE<span>.</span></a><p>Learning with purpose. Building with curiosity.</p><small>© <span class="current-year">2026</span> Praise Abidoye. All rights reserved.</small></div></footer>
+</body>
+</html>
